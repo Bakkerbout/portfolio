@@ -1,7 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import "tailwindcss";
 
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    font-family: "Poppins", sans-serif;*/
-/*}*/
+@theme {
+    --font-sans: "Inter", sans-serif;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.intro {
+    grid-column: 1 / 3;
+    background-color: #95977A;
+}
+
+.profile-pic {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.description {
+    grid-column: 1 / 3;
+    background-color: #DFB5A6;
+}
+
+.contact-button {
+    background-color: #445A4D;
+    color: #F4EEED;
+}

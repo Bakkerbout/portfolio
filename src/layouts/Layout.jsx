@@ -32,7 +32,7 @@ function Layout() {
                     <Outlet/>
                 </div>
             </main>
-            <footer className="bg-[#DFB5A6] py-4 text-center text-[#1A2E26]">
+            <footer className="bg-[#DFB5A6] py-2 text-center text-[#1A2E26]">
                 <h3 className="font-bold text-2xl text-center mb-3">mauddevisser@caiway.net</h3>
                 <div className="flex justify-center items-center gap-4 mb-3">
                     <a href="https://www.linkedin.com/in/maud-de-visser-198ba43b3"
