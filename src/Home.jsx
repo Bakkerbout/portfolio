@@ -1,4 +1,6 @@
 import {Link} from "react-router";
+import {ScrollArrows} from "../components/ScrollArrows.jsx";
+import {TimelineItem} from "../components/TimelineItem.jsx";
 
 function Home() {
     return (
@@ -15,8 +17,7 @@ function Home() {
                 <div className="box description shadow-lg">
                     <p className="text-[#1C352D] text-xl leading-relaxed">
                         Ik ben een tweedejaars student Creative Media and Game Technologies aan de Hogeschool Rotterdam.
-                        Ik werk graag aan creatieve projecten en haal energie uit het samenwerken binnen een team.
-                    </p>
+                        Ik werk graag aan creatieve projecten en haal energie uit het samenwerken binnen een team. </p>
                 </div>
                 <div className="side-column">
                     <div className="box profile-pic shadow-lg">
@@ -28,28 +29,59 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <div className="arrow-wrapper">
-                <div className="arrow"></div>
-                <div className="arrow"></div>
-                <div className="arrow"></div>
-            </div>
-            <div className="box experience shadow-lg text-[#1C352D]">
-                <h3 className="text-3xl font-bold mb-8">Educatie</h3>
-                <h4 className="text-xl font-semibold mb-5">Hogeschool Rotterdam</h4>
-                <h4 className="text-xl mb-5">Creative Media and Game Technologies</h4>
-                <p className="text-xl font-light italic">Sep 2024 | Heden</p>
-                <h4 className="text-xl mt-14 font-semibold mb-5">ISW Gasthuislaan</h4>
-                <h4 className="text-xl mb-5">Havo</h4>
-                <p className="text-xl font-light italic">Sep 2019 | Jul 2023</p>
-                <div>
-                    <img src='/thin-flower.png' alt="Thin flower"/>
+
+            <ScrollArrows/>
+
+            <div className="flex justify-between text-sm font-medium">
+                <div
+                    className="relative drop-shadow-md grid grid-cols-2 text-sm font-medium rounded-3xl overflow-hidden">
+                    <div className="absolute inset-0 flex justify-center pointer-events-none py-13 mt-15">
+                        <svg
+                            viewBox="0 0 100 500"
+                            preserveAspectRatio="none"
+                            className="h-full w-34 text-[#1C352D] "
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2">
+                            <path d="M50 0 Q80 125 50 250 T50 500"/>
+                        </svg>
+                    </div>
+
+                    <div className="flex-1 experience text-[#1C352D] rounded-l-3xl p-7">
+                        <div className="ml-20">
+                            <TimelineItem
+                                title="Hogeschool Rotterdam"
+                                role="Creative Media and Game Technologies"
+                                period="Sep 2024 | Heden"/>
+                            <TimelineItem
+                                title="ISW Gasthuislaan"
+                                role="Havo"
+                                period="Sep 2019 | Jul 2023"
+                                isLast/>
+                        </div>
+                        <div>
+                            <img src='/thin-flower.png' alt="Thin flower"
+                                 className="w-40 h-auto object-contain -ml-14 -mt-36"/>
+                        </div>
+                    </div>
+                    <div
+                        className="flex-1 experience rounded-r-3xl text-[#1C352D] p-7">
+                        <div className="ml-20">
+                            <TimelineItem
+                                title="Jumbo"
+                                role="Vulploeg Medewerker"
+                                period="Jul 2022 | Heden"/>
+                            <TimelineItem
+                                title="Ballorig"
+                                role="All-Round Medewerker"
+                                period="Jun 2024 | Dec 2025"
+                                isLast/>
+                        </div>
+                        <img src='/flower.png' alt="Flower" className="w-52 h-auto object-contain ml-110 -mt-80"/>
+                    </div>
                 </div>
             </div>
-            <div className="arrow-wrapper">
-                <div className="arrow"></div>
-                <div className="arrow"></div>
-                <div className="arrow"></div>
-            </div>
+            <ScrollArrows/>
         </>
     );
 }
