@@ -35,10 +35,6 @@ function Layout() {
                               className="text-[#1A2E26] text-xl font-bold hover:opacity-70 transition-opacity">
                             Over mij
                         </Link>
-                        <Link to={'/Contact'}
-                              className="text-[#1A2E26] text-xl font-bold hover:opacity-70 transition-opacity">
-                            Contact
-                        </Link>
                     </div>
                 </nav>
             </header>
