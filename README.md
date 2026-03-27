@@ -16,7 +16,6 @@ Hier toon ik mijn vaardigheden en projecten als CMGT-student.
 ## Wat heb ik geleerd?
 
 - Werken met React routes
-- ??
 
 ## Installatie
 
@@ -27,8 +26,6 @@ Hier toon ik mijn vaardigheden en projecten als CMGT-student.
 5. npm run dev
 
 ## Toekomstige verbetering
-
-- ??
 
 ## Auteur
 
