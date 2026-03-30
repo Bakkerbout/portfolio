@@ -3,9 +3,9 @@ import Layout from "./layouts/Layout.jsx";
 import Home from "./Home.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
 import Projects from "./pages/Projects.jsx";
-import SongfestivalArtists from "./projects/songfestivalartists.jsx";
-import SwimRecords from "./projects/swimrecords.jsx";
-import JokerOut from "./projects/jokerout.jsx";
+import SongfestivalArtists from "./projects/SongfestivalArtists.jsx";
+import SwimRecords from "./projects/SwimRecords.jsx";
+import JokerOut from "./projects/JokerOut.jsx";
 
 const router = createBrowserRouter([
     {

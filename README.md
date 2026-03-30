@@ -16,10 +16,7 @@ Hier toon ik mijn vaardigheden en projecten als CMGT-student.
 ## Wat heb ik geleerd?
 
 - Werken met React routes
-<<<<<<< dev
 - Een bento grid layout
-=======
->>>>>>> main
 
 ## Installatie
 
@@ -31,11 +28,8 @@ Hier toon ik mijn vaardigheden en projecten als CMGT-student.
 
 ## Toekomstige verbetering
 
-<<<<<<< dev
 - Een contact pagina
 
-=======
->>>>>>> main
 ## Auteur
 
 Maud de Visser  
