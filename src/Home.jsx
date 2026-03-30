@@ -9,11 +9,9 @@ function Home() {
                 <div className="box intro shadow-lg overflow-hidden relative">
                     <div className="text-left z-10 relative">
                         <h1 className="text-xl md:text-4xl font-semibold text-[#1C352D] leading-tight mb-1">Hallo
-                            ik
-                            ben Maud</h1>
+                            ik ben Maud</h1>
                         <h2 className="text-xl md:text-4xl font-semibold text-[#1C352D] leading-tight">Ik ben
-                            nieuwsgierig en
-                            creatief</h2>
+                            leergierig en vastberaden</h2>
                     </div>
                     <img src='/flower.png' alt="Flower"
                          className="absolute bottom-[1px] right-[-20px] opacity-75 md:opacity-100 w-25 md:w-52 h-auto object-contain md:relative md:-mt-18 md:-mr-18"/>
@@ -28,8 +26,8 @@ function Home() {
                         <img src='/mauddevisser.png' alt="Maud de Visser"/>
                     </div>
                     <Link to={'/projects'} className="box project-button shadow-lg no-underline">
-                        <span className="text-xl md:text-3xl">Projecten</span>
-                        <span className="absolute top-1 right-4 text-3xl md:text-5xl">↗</span>
+                        <span className="text-xl font-semibold md:text-3xl">Projecten</span>
+                        <span className="absolute font-semibold top-1 right-4 text-3xl md:text-5xl">↗</span>
                     </Link>
                 </div>
             </div>
@@ -38,12 +36,12 @@ function Home() {
 
             <div className="flex justify-between text-sm font-medium">
                 <div
-                    className="relative drop-shadow-md grid grid-cols-1 md:grid-cols-2 text-sm font-medium rounded-3xl overflow-hidden">
+                    className="relative w-full max-w-[1600px] mx-auto drop-shadow-md grid grid-cols-1 md:grid-cols-2 text-sm font-medium rounded-3xl overflow-hidden">
                     <div className="absolute inset-0 hidden md:flex justify-center pointer-events-none py-13 mt-13">
                         <svg
                             viewBox="0 0 100 500"
                             preserveAspectRatio="none"
-                            className="h-full w-34 text-[#1C352D] "
+                            className="h-full w-34 opacity-30 text-[#1C352D] "
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2">
@@ -58,16 +56,19 @@ function Home() {
                             <TimelineItem
                                 title="Hogeschool Rotterdam"
                                 role="Creative Media and Game Technologies"
-                                period="Sep 2024 | Heden"/>
+                                period="Sep 2024 | Heden"
+                                detail="Creatieve concepten tot leven brengen met code en design."
+                            />
                             <TimelineItem
                                 title="ISW Gasthuislaan"
                                 role="Havo"
                                 period="Sep 2019 | Jul 2023"
+                                detail="Met Informatica als keuzevak legde ik hier de basis voor mijn passie voor programmeren."
                                 isLast/>
                         </div>
                         <div>
-                            <img src='/thin-flower.png' alt="Thin flower"
-                                 className="hidden md:block w-40 h-auto object-contain -ml-14 -mt-36"/>
+                            <img src='/flower.png' alt="Flower"
+                                 className="hidden md:block w-40 h-auto object-contain -ml-14 -mt-20"/>
                         </div>
                     </div>
                     <div
@@ -77,33 +78,51 @@ function Home() {
                             <TimelineItem
                                 title="Jumbo"
                                 role="Vulploeg Medewerker"
-                                period="Jul 2022 | Heden"/>
+                                period="Jul 2022 | Heden"
+                                detail="Naast het vullen van de vakken werk ik nieuwe teamleden in, zodat ze snel hun weg vinden."
+                            />
                             <TimelineItem
                                 title="Ballorig"
                                 role="All-Round Medewerker"
                                 period="Jun 2024 | Dec 2025"
+                                detail="Als all-round medewerker deed ik van alles: van de kassa en de catering tot het netjes houden van de speelhal."
                                 isLast/>
                         </div>
-                        <img src='/flower.png' alt="Flower"
-                             className="hidden md:block w-52 h-auto object-contain ml-110 -mt-96"/>
+                        <img src='/f1car.png' alt="F1 Car"
+                             className="hidden md:block w-40 opacity-90 h-auto object-contain ml-110 -mt-120"/>
                     </div>
                 </div>
             </div>
-            <ScrollArrows/>
-            <h3 className="text-4xl text-center mt-22 md:mt-26 text-[#1C352D] font-bold mb-8">Projecten</h3>
-            <div className="flex flex-col md:flex-row  mb-8 md:mb-16 gap-10 md:gap-0 justify-between">
-                <Link to={'/JokerOut'}>
-                    <img src='/jokerout.png' alt="Joker Out Fan page"
-                         className="w-100 h-auto rounded-2xl object-contain"/>
+            <h3 className="text-4xl text-center text-[#1C352D] mt-5 md:mt-0 font-bold mb-5 md:mb-8">Projecten</h3>
+            <div className="flex flex-col md:flex-row  mb-6 gap-10 md:gap-8 justify-between">
+                <Link to={'/SwimRecords'} className="group w-full md:w-1/3 flex flex-col">
+                    <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 shadow-sm">
+                        <img
+                            src='/swimrecords.png' alt="Swimrecords"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </div>
                 </Link>
-                <Link to={'/SwimRecords'}>
-                    <img src='/swimrecords.png' alt="Swimrecords" className="w-100 h-auto rounded-2xl object-contain "/>
+                <Link to={'/JokerOut'} className="group w-full md:w-1/3 flex flex-col">
+                    <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 shadow-sm">
+                        <img
+                            src='/jokerout.png' alt="Joker Out Fan page"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </div>
                 </Link>
-                <Link to={'/SongfestivalArtists'}>
-                    <img src='/songfestival.png' alt="Songfestival artists"
-                         className="w-100 h-auto rounded-2xl object-contain"/>
+                <Link to={'/SongfestivalArtists'} className="group w-full md:w-1/3 flex flex-col">
+                    <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 shadow-sm">
+                        <img
+                            src='/songfestival.png' alt="Songfestival artists"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </div>
                 </Link>
             </div>
+            <Link to={'/Projects'} className="box moreprojects-button shadow-lg no-underline">
+                <span className="text-lg md:text-xl font-bold">Meer Bekijken</span>
+            </Link>
         </>
     );
 }
