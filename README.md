@@ -16,7 +16,7 @@ Hier toon ik mijn vaardigheden en projecten als CMGT-student.
 ## Wat heb ik geleerd?
 
 - Werken met React routes
-- Een bento grid layout
+- Een bento grid layout maken
 
 ## Installatie
 

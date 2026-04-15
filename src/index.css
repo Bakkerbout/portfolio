@@ -97,46 +97,49 @@
 }
 
 .aboutme-row {
+    width: 100%;
     grid-column: span 3;
     display: grid;
     grid-template-columns: 1.8fr 1fr;
     gap: 25px;
     align-items: stretch;
-}
-
-.aboutme, .skills {
-    grid-column: auto;
-    width: 100%;
+    height: calc(100vh - 152px - 160px);
+    max-height: calc(100vh - 152px - 160px);
+    margin-bottom: 25px;
+    margin-top: -10px;
 }
 
 .aboutme {
     background-color: #95977A;
     grid-column: 1;
     grid-row: 1;
-    height: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.skills {
+    background-color: #445A4D;
+    color: #F4EEED;
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0 !important;
 }
 
 .aboutme-pic {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: span 2;
     padding: 0;
     overflow: hidden;
-    height: 70%;
+    height: 100%;
 }
 
 .aboutme-pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-}
-
-.skills {
-    background-color: #445A4D;
-    color: #F4EEED;
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    margin-top: -190px;
 }
 
 .education, .experience {
@@ -238,7 +241,6 @@
     .moreprojects-button {
         width: 70%;
         margin: 20px auto;
-        /*padding: 12px;*/
     }
 
     .project-button {
@@ -285,19 +287,25 @@
     .aboutme-row {
         display: flex;
         flex-direction: column;
+        height: auto;
+        max-height: none;
+        gap: 20px;
+        align-items: center;
+        margin-top: 5px;
     }
 
     .aboutme {
-        height: 45%;
-    }
-
-    .aboutme-pic {
-        height: 250px;
-        padding: 0;
+        width: 100%;
     }
 
     .skills {
-        margin-top: 0;
-        height: 30%;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutme-pic {
+        width: 100%;
+        height: 270px;
+        padding: 0;
     }
 }
